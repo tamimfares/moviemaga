@@ -1,0 +1,14 @@
+<%= simple_form_for(@movie) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-group">
+    <%= f.input :title %>
+    <%= f.input :storyline %>
+    <%= f.input :tagline %>
+    <%= f.input :rating %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
