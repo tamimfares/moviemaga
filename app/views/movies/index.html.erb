@@ -3,6 +3,7 @@
 <table>
   <thead>
     <tr>
+      <th>Image</th>
       <th>Title</th>
       <th>Storyline</th>
       <th>Tagline</th>
@@ -14,6 +15,7 @@
   <tbody>
     <% @movies.each do |movie| %>
       <tr>
+        <td><%= image_tag movie.image.url(:thumb) %></td>
         <td><%= movie.title %></td>
         <td><%= movie.storyline %></td>
         <td><%= movie.tagline %></td>

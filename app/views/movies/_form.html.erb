@@ -1,14 +1,19 @@
-<%= simple_form_for(@movie) do |f| %>
+<%= simple_form_for @movie do |f| %>
   <%= f.error_notification %>
 
   <div class="form-group">
-    <%= f.input :title %>
+    <div class="form-group">
+      <%= f.input :title, class: "form-control" %>
+    </div>
     <%= f.input :storyline %>
     <%= f.input :tagline %>
     <%= f.input :rating %>
+    <div class="form-group">
+      <%= f.input :image, class: "form-control-file" %>
+    </div>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, class: "btn btn-primary" %>
   </div>
 <% end %>
