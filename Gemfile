@@ -20,6 +20,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
 end
 gem 'simple_form'
+gem 'devise', '~> 4.2'
 
 group :development, :test do
   gem 'byebug', platform: :mri
